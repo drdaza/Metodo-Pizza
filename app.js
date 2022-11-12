@@ -1,44 +1,47 @@
-const harina = "400g harina";
-const agua = "300ml agua";
-const aceite = "2 cucharadas aceite"
-const levadura = "15ml levadura"; 
+const flour = "400g harina";
+const water = "300ml agua";
+const oil = "2 cucharadas aceite"
+const yeast = "15ml levadura"; 
+const sugar ="a litle sugar"
+const salt = "a litle salt" 
+const MassBasse= [flour, water, oil, yeast, sugar, salt]
 
-let ingrediente1= "salsa de tomate";
-let ingrediente2= "pollo";
-let ingrediente3= "champiñones";
-let ingrediente4= "queso mozzarela"
+let ingredient1= "salsa de tomate";
+let ingredient2= "pollo";
+let ingredient3= "champiñones";
+let ingredient4= "queso mozzarela"
+let ingredients = [ingredient1, ingredient2, ingredient3, ingredient4]
 
-console.log(harina);
-function mezcla()
-{
-    console.log("añadir a un bowl una pizca de sal y azucar" +" "+ agua + " "+ aceite + " "+ harina + ", mezclar durante un minuto ");
+DeliverPizza();
+function PrepareMix(){
+    for (let index = 0; index < MassBasse.length; index++) {
+        console.log("added "+MassBasse[index]);  
+    }
+    return true;
 }
-function tomarRodillo()
-{
-    console.log("tomar un rodillo ");
-}
-function amasar()
-{
-    tomarRodillo();
-    console.log("y amasar hasta obtener la textura sin grumos");
-}
-function calentarHorno()
-{
-    console.log("poner el horno a 220 grados");
-}
-function añadirSalsaTomate()
-{
-    console.log("añadir: "+ ingrediente1);
-}
-function añadirIngredientesMasa()
-{
+function knead(){
     
-    console.log("Añadimos queso rallado");
-    console.log("Añadimos pollito y champiñones");
-    console.log("añadimos especias");
+    if(PrepareMix()==true){
+        console.log("kneading the dough...")
+    }
 }
-function meterPizzaHorno()
-{
+function AddIngredients(){
+    for (let index = 0; index < ingredients.length; index++) 
+    {
+        console.log("adding: "+ingredients[index]);
+        
+    }
+}
+function BakePizza(){
+    knead();
+    AddIngredients();
+    console.log("bakking pizza");
+    return true;
+}
+function DeliverPizza(){
+    if(BakePizza()==true){
+        console.log("Delivering Pizza :D Thanks.");
+    }
+}
 
 
-}
