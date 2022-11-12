@@ -6,13 +6,24 @@ const sugar ="a litle sugar"
 const salt = "a litle salt" 
 const MassBasse= [flour, water, oil, yeast, sugar, salt]
 
+const readLineSync = require('readline-sync')
+
+let userRes;
+
+userRes = readLineSync.question("Pick an option");
+console.log(userRes);
+    
+
+
+
+
+
 let ingredient1= "salsa de tomate";
 let ingredient2= "pollo";
 let ingredient3= "champiñones";
 let ingredient4= "queso mozzarela"
-let ingredients = [ingredient1, ingredient2, ingredient3, ingredient4]
+let ingredients = [ingredient1, ingredient2, ingredient3, ingredient4];
 
-DeliverPizza();
 function PrepareMix(){
     for (let index = 0; index < MassBasse.length; index++) {
         console.log("added "+MassBasse[index]);  

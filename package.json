@@ -1,0 +1,22 @@
+{
+  "name": "metodo-pizza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drdaza/Metodo-Pizza.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drdaza/Metodo-Pizza/issues"
+  },
+  "homepage": "https://github.com/drdaza/Metodo-Pizza#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
